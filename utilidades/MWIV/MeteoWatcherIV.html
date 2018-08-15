@@ -142,14 +142,21 @@ mucho el rocío en las lentes, pero se olvida que puede ser también muy dañino
 la electrónica que rodea a nuestro telescopio (montura, ordenadores, cámaras, enfocadores, 
 etc). E incluso, que debido al hielo sea imposible cerrar el observatorio.</font></p>
 
-<p><font size="4" color="#FFFFFF">Meteo Watcher IV dispone de un calefactor 
-interno situado bajo el sensor de lluvia. Activándolo podremos eliminar la 
+<p><font size="4" color="#FFFFFF">MeteoWatcher IV cuenta con un nuevo sensor de 
+lluvia capacitivo de compuesto cerámico. De color celeste, por lo que no se debe 
+confundir con alguna protección superficial. Este sensor es mucho más sensible, 
+por lo que puede requerir algo más de tiempo en su ajuste. Este sensor dispone de un calefactor 
+interno situado en la otra cara del sensor. Activándolo podremos eliminar la 
 humedad del rocío y escarcha, o mejor aún, evitar que se forme. Puede funcionar 
 de manera automática, activándose en cuanto detecta agua el sensor de lluvia y 
 desactivándose cuando desaparece. También es posible activarlo manualmente. En 
 cualquiera de los casos podremos fijar el porcentaje de potencia que se desea 
-aplicar. El consumo medido del dispositivo al 100% de potencia y alimentado a 12v es de 
-aproximadamente 0.2 Amp, por lo que se recomienda usar una fuente de 
+aplicar. Por mi experiencia, configurar el calefactor para trabajar a un mínimo 
+del 30% en noches húmedas y frías nos podrá garantizar tener falsos positivos de 
+lluvia por humedad o escarcha.</font></p>
+
+<p><font size="4" color="#FFFFFF">El consumo medido del dispositivo al 100% de 
+potencia y alimentado a 12v es de aproximadamente 0.3 Amp, por lo que se recomienda usar una fuente de 
 alimentación que proporcione de verdad y con holgura 0.5 Amp.</font></p>
 
 <p><font size="4" color="#FFFFFF">El Programa de Control está compilado en .NET 4.0, por 
@@ -715,10 +722,9 @@ ni apagar el Meteo Watcher IV.</font></p>
     humedad alta.</font></p>
     <p><b><font size="4" color="#C6C246">Lluvia: </font></b><font size="4" color="#FFFFFF">
     Los valores de este parámetro pueden variar entre 0 (totalmente seco) y 9999. Fijaremos para este parámetro el valor a partir del 
-    cual entendemos que hay lluvia. Hay que recordar que este es el valor que 
-    usará el Meteo Watcher IV para activar el calentador anti rocío, por lo que 
-    puede que nos interese poner un nivel bajo, de forma que el calentador se 
-    encienda en cuanto detecte la más mínima presencia de agua. </font></br>
+    cual entendemos que hay lluvia. En épocas húmedas es recomendable poner este 
+    valor no muy bajo (100-120 puede ser razonable) y configurar el calefactor 
+    para trabajar siempre a un mínimo del 30%.</font></br>
     </p>
     <p><font size="4" color="#C6C246"><b>Viento</b></font><b><font size="4" color="#C6C246">: </font></b><font size="4" color="#FFFFFF">Valor a partir del cual 
         se entiende que pasa de  calma a  viento fuerte, que impide mantener 
@@ -1147,8 +1153,8 @@ ni apagar el Meteo Watcher IV.</font></p>
   <tr>
     <td width="18%">
     <font size="4" color="#C6C246"><b>Firmware</b></font></td>
-    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">4.4 -
-    <a href="FW-MWIV-v44.zip">FW-MWIV-v44.zip</a></font></td>
+    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">4.5 -
+    <a href="FW-MWIV-v45.zip">FW-MWIV-v45.zip</a></font></td>
   </tr>
 </table>
 <p>&nbsp;</p>
