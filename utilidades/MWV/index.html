@@ -412,6 +412,8 @@ recomendable verificar la configuración tras aplicar una actualización del
     los valores proporcionados por alguno de los sensores, tenemos:</font></p>
     <p><b><font size="4" color="#C6C246">Temp.</font></b><font size="4" color="#FFFFFF">: 
     Temperatura ambiente.</font></p>
+    <p><font size="4" color="#C6C246"><b>Presión</b></font><font size="4" color="#FFFFFF">: 
+    Presión atmosférica.</font></p>
     <p><b><font size="4" color="#C6C246">T.Cielo</font></b><font size="4" color="#FFFFFF">: 
      
     Temperatura del 
@@ -469,8 +471,8 @@ recomendable verificar la configuración tras aplicar una actualización del
     dicha gráfica. Lo que nos permitirá empotrarla en una página Web o en otro 
     tipo de visualizador.</font></p>
     <p><font size="4" color="#FFFFFF">Los valores de </font>
-    <font size="4" color="#C6C246">Humedad</font><font size="4" color="#FFFFFF">,
-    </font><font size="4" color="#C6C246">Lluvia</font><font size="4" color="#FFFFFF">,
+    <font size="4" color="#C6C246">Humedad</font><font size="4" color="#C6C246">, 
+    Presión, Lluvia</font><font size="4" color="#FFFFFF">,
     </font><font size="4" color="#C6C246">Luz</font><font size="4" color="#FFFFFF">,
     </font><font size="4" color="#C6C246">Relé y P. Externo</font><font size="4" color="#FFFFFF"> 
     se visualizan en una escala comprendida entre 0 y 100, por lo que utilizan 
@@ -480,7 +482,9 @@ recomendable verificar la configuración tras aplicar una actualización del
     </font><font size="4" color="#C6C246">T. Caja</font><font size="4" color="#FFFFFF">,
     </font><font size="4" color="#C6C246">Rocío</font><font size="4" color="#FFFFFF"> 
     y </font><font size="4" color="#C6C246">Viento</font><font size="4" color="#FFFFFF"> 
-    utilizan el eje de ordenadas (Y) de la derecha.</font></p>
+    utilizan el eje de ordenadas (Y) de la derecha. En la gráfica, valor de 
+    Presión se dibuja reescalado desplazando la coma a la izquierda una 
+    posición.</font></p>
     <p><font size="4" color="#FFFFFF">Los datos visualizados son los mismos que 
     se almacenan en formato CSV, por lo que para estudios más profundos y 
     detallados recomiendo utilizar directamente una hoja de cálculo.</font></p>
@@ -1118,6 +1122,10 @@ recomendable verificar la configuración tras aplicar una actualización del
         <td width="50%"><font size="4" color="#FFFFFF">nn</font></td>
       </tr>
       <tr>
+        <td width="50%"><font size="4" color="#FFFFFF">Presión atmosférica</font></td>
+        <td width="50%"><font size="4" color="#FFFFFF">nnnn.nn</font></td>
+      </tr>
+      <tr>
         <td width="50%"><font size="4" color="#FFFFFF">Punto de rocío</font></td>
         <td width="50%"><font size="4" color="#FFFFFF">nn.nn</font></td>
       </tr>
@@ -1161,15 +1169,15 @@ recomendable verificar la configuración tras aplicar una actualización del
     <td width="18%">
     <font size="4" color="#C6C246"><b>Programa de Control</b></font></td>
     <td width="82%">
-    &nbsp;<font size="4" color="#FFFFFF">5.0.0 -
-    <a href="MeteoWatcherV-v5.0.0.zip">MeteoWatcherV-v5.0.0.zip</a></font></td>
+    &nbsp;<font size="4" color="#FFFFFF">5.0.1 -
+    <a href="MeteoWatcherV-v5.0.1.zip">MeteoWatcherV-v5.0.1.zip</a></font></td>
   </tr>
   <tr>
     <td width="18%">
     <i>
     <font size="4" color="#C6C246"><b>Firmware</b></font></i></td>
-    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">5.0.0-
-    <a href="FW-MWV-v5.0.0.zip">FW-MWV-v5.0.0.zip</a></font></td>
+    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">5.0.1-
+    <a href="FW-MWV-v5.0.1.zip">FW-MWV-v5.0.1.zip</a></font></td>
   </tr>
 </table>
 <p>&nbsp;</p>
