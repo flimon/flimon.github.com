@@ -29,27 +29,28 @@
     <td width="100%"><b><font color="#C6C246" size="4">Meteo </font></b>
     <font color="#C6C246" size="4"><b>Watcher V </b></font><font color="#FFFFFF" size="4">
     es un monitor y analizador de condiciones meteorológicas esenciales para la 
-    operativa observatorios astronómicos.</font><p><font color="#FFFFFF" size="4">
+    operativa de observatorios astronómicos.</font><p><font color="#FFFFFF" size="4">
     Ha sido diseñado 
     para controlar la seguridad del observatorio, ya sea 
     gestionado de manera presencial o remota.  </font></p>
     <p><font size="4" color="#FFFFFF">La irrupción del Internet de las Cosas (IoT) 
-    nos está facilitando la utilización de nuevos sensores, más precisos, con mayores 
+     
+    está facilitando la utilización de nuevos sensores, más precisos, con mayores 
     prestaciones, con menor consumo y mayor durabilidad.  </font></p>
     <p><font size="4" color="#FFFFFF">Esta nueva versión del Meteo Watcher hace uso de nuevos sensores, que le permiten mejorar la 
     precisión y fiabilidad en algunos de los parámetros monitorizados. Se ha 
-    revisado todo el código, actualizando incluso librerías de gestión de 
+    revisado refactorizado totalmente el código, actualizando  librerías de gestión de 
     dispositivos. El programa de control presenta un nuevo interfaz de usuario, 
     mejorado y adaptado al trabajo en condiciones de poca luz.</font></p>
     <p><font size="4" color="#FFFFFF">La plataforma sobre la que se ha diseñado le permite seguir siendo el único dispositivo 
     existente de este 
-    tipo que opera de manera autónoma, sin tener que estar conectado a ningún 
-    ordenador, analizando los parámetros meteorológicos 
+    tipo que opera de manera autónoma, sin tener que depender de ningún 
+    ordenador para mantener seguro el observatorio, analizando los parámetros meteorológicos 
     conforme a la configuración que hayamos establecido y decidiendo, por sí 
     sólo, si puede permanecer abierto o no el observatorio. </font>
     </p>
     <p><font size="4" color="#FFFFFF">Dispone de sensores que le permiten 
-    monitorizar los principales parámetros meteorológicos relevantes, desde el 
+    monitorizar los  parámetros meteorológicos más relevantes desde el 
     punto de vista de la seguridad en un observatorio astronómico: Nubosidad, 
     Temperatura ambiente, Humedad Relativa,&nbsp;Presión atmosférica, Punto de Rocío, Luminosidad, 
     Lluvia y Viento.</font></p>
@@ -98,13 +99,13 @@
     <td width="100%"><font size="4" color="#FFFFFF">Meteo Watcher V se monta en 
     una caja PVC 
     de 102mm X 102mm X 56mm y con grado de protección IP66.</font><p align="center">
-    <img border="0" src="MWV-5.jpg" width="364" height="446"></p>
+    <img border="0" src="MWV-5.jpg" width="364"></p>
     <p><font size="4" color="#FFFFFF">En su diseño se ha buscado practicidad y 
 operatividad, proporcionando información en tiempo real de manera 
     gráfica o procesable con posterioridad mediante un fichero CSV.</font></p>
 
-    <p><font size="4" color="#FFFFFF">Dispone de una salida de 
-    relé que permite actuar, sobre otros dispositivos y/o alarmas, en el caso de que 
+    <p><font size="4" color="#FFFFFF">Dispone de una salida  que permite actuar sobre otros dispositivos y/o 
+    sensores, como puede ser el Talon6 o similares, en el caso de que 
 las condiciones meteorológicas en la ubicación del observatorio no sean seguras.</font></p>
 
 <p><font size="4" color="#FFFFFF">Las comunicaciones entre el  Meteo Watcher 
@@ -114,15 +115,16 @@ de 5 mts).</font></p>
 
 <p><font size="4" color="#FFFFFF">Además, lleva también un cable de dos pares de 
 hilos de 5 mts de longitud: un par para la 
-alimentación a 12V y otro par que corresponde a la salida del relé que permite 
+alimentación a 12V (Rojo + y Negro -) y otro par que corresponde a la salida de la señal 
+(no tienen polaridad ni voltaje) que permiten 
 interactuar con los sistemas de alarma u otros dispositivos que atienda la 
 apertura/cierre del observatorio</font></p>
 
-<p><font size="4" color="#FFFFFF">Meteo Watcher no depende de un ordenador 
-para operar y gestionar la seguridad del observatorio. Una vez configurado, éste 
-trabaja de manera autónoma, analizando las medidas medioambientales y 
-tomando decisiones, en base a la configuración establecida, sobre si debe seguir o no abierto 
-el observatorio.</font></p>
+<p><font size="4" color="#FFFFFF">Meteo Watcher puede funcionar y gestionar la 
+seguridad del observatorio sin necesidad de un ordenador. Una vez configurado, 
+éste trabaja de manera autónoma, analizando las medidas medioambientales y 
+decidiendosi debe seguir o no abierto el observatorio en base a la configuración establecida. Desde el momento que lo enciendes comienza a analizar 
+parámetros y tomar decisiones.</font></p>
 
 <p><font size="4" color="#FFFFFF">El  Programa de Control permite al usuario 
 monitorizar en tiempo real los valores meteorológicos y 
@@ -133,11 +135,11 @@ a la automatización de observatorios, como puede ser CCD Commander o CCD Auto P
 además de ser compatible con <a href="http://ascom-standards.org/Downloads/SafetyMonitorDrivers.htm">
 ASCOM Safety Monitor</a>.</font></p>
 
-<p><font size="4" color="#FFFFFF">Tanto la telemetría proporcionada en la 
+<p><font size="4" color="#FFFFFF">La telemetría proporcionada en la 
 ventana principal del Programa de Control y en el Registro de Intercambio de Información con otros 
 programas se actualiza cada 30 segundos.</font></p>
 
-<p><font size="4" color="#FFFFFF">Meteo Watcher es un dispositivo de medición de 
+<p><font size="4" color="#FFFFFF">Meteo Watcher, es un dispositivo de medición de 
 parámetros medioambientales, que lejos de ser absolutos, son dependientes del 
 lugar de instalación y época del año en la que nos encontremos, por lo que será necesario realizar 
  
@@ -146,7 +148,7 @@ condiciones climatológicas de cada época.  </font>
 <font size="4" color="#C6C246">En todo caso, Meteo Watcher no es una 
 estación meteorológica y no debe utilizarse como tal.</font></p>
 
-<p><font size="4" color="#FFFFFF">Meteo Watcher dispone de un nuevo sensor de 
+<p><font size="4" color="#FFFFFF">Meteo Watcher V dispone de un nuevo sensor de 
 humedad y temperatura ambiente, más preciso y con un&nbsp; comportamiento más 
 lineal, que le permite controlar de manera más ajustada la humedad 
 relativa y 
@@ -154,25 +156,35 @@ la temperatura ambiente, y por tanto conocer la temperatura de rocío (punto de
 rocío). Esto permite configurar las alertas para que se cierre el 
 observatorio en caso de alcanzar una humedad relativa límite o que la temperatura de 
 rocío se acerque demasiado a la temperatura ambiente. En ocasiones se cuida 
-mucho el rocío en las lentes, pero se olvida que puede ser también muy dañino en 
+mucho el rocío en las lentes, pero se olvida que puede ser también muy 
+perjudicial para 
 la electrónica que rodea a nuestro telescopio (montura, ordenadores, cámaras, enfocadores, 
 etc). E incluso, que debido al hielo sea imposible cerrar el observatorio.</font></p>
 
+<p><font size="4" color="#FFFFFF">En Meteo Watcher V se ha optado 
+por sustituir el clásico relé de señal de apertura/cierre del observatorio por 
+un dispositivo de estado sólido, más duradero y que proporciona un significativo 
+menor consumo. En cualquier caso, no debe utilizarse como interruptor para el 
+manejo de motores u otro tipo de dispositivos.</font></p>
+
 <p><font size="4" color="#FFFFFF">Meteo Watcher cuenta con un  sensor de 
-lluvia capacitivo de compuesto cerámico mucho más sensible. Es de color celeste, 
-por lo que no se debe confundir con alguna protección superficial. Este sensor dispone de un calefactor 
-interno situado en su reversa. Activándolo podremos prevenir/eliminar la 
+lluvia capacitivo de compuesto cerámico mucho más sensible. [Es de color celeste 
+y no lleva ninguna protección superficial que tenga que retirar.]  </font></p>
+
+<p><font size="4" color="#FFFFFF">En la reversa de la tapa, bajo el sensor de 
+lluvia, se ha dispuesto de un calefactor. Activándolo podremos prevenir/eliminar la 
 humedad del rocío y la escarcha, o mejor aún, evitar que se forme. Puede funcionar 
-de manera automática, activándose en cuanto detecta agua el sensor de lluvia y 
-desactivándose cuando desaparece. También es posible activarlo manualmente. En 
-cualquiera de los casos podremos fijar el porcentaje de potencia que se desea 
+de manera automática, activándose en cuanto detecta agua el sensor de lluvia o 
+la humedad relativa supera el 75%. En función del agua detectada y la humedad 
+relativa en el ambiente se aplica más o menos potencia al calefactor. También es posible activarlo manualmente. En 
+cualquiera de los casos podremos fijar el porcentaje de potencia mínimo que se desea 
 aplicar. Por mi experiencia, configurar el calefactor para trabajar a un mínimo 
-del 30% en noches húmedas y frías nos podrá garantizar tener falsos positivos de 
+del 10% en noches húmedas y frías nos podrá garantizar tener falsos positivos de 
 lluvia por humedad o escarcha.</font></p>
 
 <p><font size="4" color="#FFFFFF">El consumo medido del dispositivo al 100% de 
-potencia y alimentado a 12V es de aproximadamente 0.3A, por lo que se recomienda usar una fuente de 
-alimentación que proporcione de verdad y con holgura 0.5A.</font></p>
+potencia  es de 0.4A, por lo que se recomienda usar una fuente de 
+alimentación que proporcione de verdad y con holgura 1.0A.</font></p>
 
 <p><font size="4" color="#FFFFFF">El Programa de Control está compilado en .NET 4.0, por 
 lo que es  compatible con Windows XP, 7, 8, 8.1 y 10. Al mismo tiempo, ha sido 
@@ -181,8 +193,8 @@ punto, no sea un problema y se adapte a la configuración regional del sistema
 donde se ejecuta.</font></p>
 
 <p><font size="4" color="#FFFFFF">El interfaz USB 2.0 utiliza el chipset CH341. Las 
-últimas versiones de Windows lo reconocen sin problemas, pero si lo necesitas,
-<a href="ch341ser.zip">aquí</a> tienes el driver para descargarlo e instalarlo.</font></p>
+últimas versiones de Windows lo reconocen sin problema, pero si lo necesita,
+<a href="ch341ser.zip">aquí</a> tiene el driver para descargarlo e instalarlo.</font></p>
 
 <p><font size="4" color="#FFFFFF">Es posible actualizar el <i>firmware</i> del procesador que incorpora. Para 
 ello utilizaremos el programa <a href="XLoader.zip">XLoader</a>. Basta con 
@@ -190,8 +202,8 @@ descomprimir y ejecutar:</font></p>
 
 <p align="center"><img border="0" src="MWV-8.jpg" width="210" height="215"></p>
 
-<p align="justify"><font size="4" color="#FFFFFF">Indicaremos que se trata de un 
-Arduino Nano (como se muestra en la imagen) y seleccionaremos el puerto. La 
+<p align="justify"><font size="4" color="#FFFFFF">Será necesario indicar que se trata de un Arduino Nano (como se muestra en la 
+imagen) y seleccionar el puerto. La 
 velocidad la fija el programa. Seleccionaremos el fichero con la última versión 
 del <i>firmware</i> que queremos instalar y pulsaremos </font>
 <font size="4" color="#C6C246"><b>Upload</b></font><font size="4" color="#FFFFFF">. 
@@ -212,13 +224,12 @@ recomendable verificar la configuración tras aplicar una actualización del
 
 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="90%" height="580">
   <tr>
-    <td width="100%" height="580"><font size="4" color="#FFFFFF">Opcionalmente se puede 
-    conectar a Meteo Watcher un anemómetro. Cualquiera que funcione por pulsos (<a href="http://es.wikipedia.org/wiki/Reed_switch">relé
+    <td width="100%" height="580"><font size="4" color="#FFFFFF">Weteo Watcher 
+    incorpora un anemómetro bastante sensible que funciona en base a pulsos (<a href="http://es.wikipedia.org/wiki/Reed_switch">relé
     <i>reed</i></a>).</font><p align="center">
     <img border="0" src="MWV-6.jpg" width="333" height="253"></p>
-    <p><font size="4" color="#FFFFFF">En concreto se utiliza el anemómetro que 
-    se ve en la foto. Es un modelo que durante años ha demostrado una gran 
-    fiabilidad fiabilidad, y que es utilizado también en 
+    <p><font size="4" color="#FFFFFF">Es un modelo que durante años ha demostrado una gran 
+    fiabilidad y que es utilizado  en 
     numerosas estaciones meteorológicas.</font></p>
 
     <p><font size="4" color="#FFFFFF">El anemómetro se conecta al Meteo Watcher 
@@ -241,16 +252,11 @@ recomendable verificar la configuración tras aplicar una actualización del
     <td width="100%"><p>
     <font size="4" color="#FFFFFF">Dado que el dispositivo opera de manera 
     autónoma, sin necesidad de estar conectado a ningún ordenador, no necesita 
-    medidas de verificación de presencia de segundos dispositivos, como ocurre 
-    en otros dispositivos similares.</font><p>
+    medidas de verificación de presencia de segundos dispositivos.</font><p>
     <font size="4" color="#FFFFFF">Desde el momento que se proporcione 
-    alimentación al Meteo Watcher V, y si lo hemos configurado en Modo 
+    alimentación al Meteo Watcher V y si lo hemos configurado en Modo 
     Automático, comenzará a realizar las medidas de los parámetros 
     meteorológicos y a adoptar decisiones sobre la seguridad de nuestro 
-    observatorio.</font><p>
-    <font size="4" color="#FFFFFF">En el Meteo Watcher el relé  está 
-    configurado en  modo &quot;cerrado en reposo&quot;, lo que implica que si 
-    se corta la alimentación de 12V el relé se cerrará y forzará el cierre del 
     observatorio.</font></td>
   </tr>
 </table>
@@ -820,10 +826,10 @@ recomendable verificar la configuración tras aplicar una actualización del
     <p><font size="4" color="#C6C246"><b>Calentador: </b></font>
     <font size="4" color="#FFFFFF">Meteo Watcher proporciona la facilidad de 
     poder indicar que el calentador funcione de manera automática, pudiendo 
-    especificar el % de potencia mínima aplicar. Este tanto por ciento mínimo fijado se 
+    especificar el % de potencia mínima a aplicar. Este tanto por ciento mínimo fijado se 
     incrementará de manera automática en función de la cantidad de agua que 
     pueda detectar el sensor de lluvia y/o que el sensor de humedad supere el 
-    mínimo del 50% de humedad relativa.</font></p>
+    mínimo del 75% de humedad relativa.</font></p>
     <p>&nbsp;</p>
     <p><font size="4" color="#FFFFFF">En el bloque de opciones que permiten el 
     modo de funcionamiento tenemos:</font></p>
@@ -861,8 +867,8 @@ recomendable verificar la configuración tras aplicar una actualización del
     extrema se puedan obtener falsas lecturas de lluvia, al depositarse gran 
     cantidad de agua sobre el sensor de lluvia. Incluso si la temperatura es muy 
     baja este agua puede llegar a convertirse en escarcha o hielo.</font></p>
-    <p><font size="4" color="#FFFFFF">Meteo Watcher incorpora un calentador 
-    que actúa sobre el sensor de lluvia, evaporando el agua que pudiera haberse 
+    <p><font size="4" color="#FFFFFF">Meteo Watcher incorpora un calefactor 
+    que actúa sobre el sensor de lluvia, ayudando a evaporar el agua que pudiera haberse 
     depositado sobre él. Si el % de la potencia empleada es muy elevada, el 
     calor generado por el calefactor puede provocar una alteración en las 
     medidas de temperatura, humedad relativa y por tanto sobre el dato del punto 
@@ -873,9 +879,9 @@ recomendable verificar la configuración tras aplicar una actualización del
     <p>&nbsp;</p>
     <p><b><font size="4" color="#BD9600">Algunas consideraciones sobre la 
     configuración y precisión del anemómetro.</font></b></p>
-    <p><font size="4" color="#FFFFFF">Aunque es posible ajustar el anemómetro 
-    para que proporcione una medida bastante exacta de la velocidad del viento, 
-    no hay que olvidar que se trata de saber cuándo hay poco o mucho viento 
+    <p><font size="4" color="#FFFFFF">Aunque el anemómetro 
+    va parametrizado para que proporcione una medida bastante aproximada de la velocidad del viento, 
+    no hay que olvidar que su objetivo es saber cuándo hay poco o mucho viento 
     como para poder abrir o  cerrar el observatorio. Una vez ajustado 
     el anemómetro, y con las velocidades de viento relativas que nos 
     proporcione, deberemos determinar de forma experimental qué entendemos por 
@@ -1164,15 +1170,15 @@ recomendable verificar la configuración tras aplicar una actualización del
     <td width="18%">
     <font size="4" color="#C6C246"><b>Programa de Control</b></font></td>
     <td width="82%">
-    &nbsp;<font size="4" color="#FFFFFF">5.0.2 -
-    <a href="MeteoWatcherV-v5.0.2.zip">MeteoWatcherV-v5.0.2.zip</a></font></td>
+    &nbsp;<font size="4" color="#FFFFFF">5.0.3 -
+    <a href="MeteoWatcherV-v5.0.3.zip">MeteoWatcherV-v5.0.3.zip</a></font></td>
   </tr>
   <tr>
     <td width="18%">
     <i>
     <font size="4" color="#C6C246"><b>Firmware</b></font></i></td>
-    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">5.0.2-
-    <a href="FW-MWV-v5.0.2.zip">FW-MWV-v5.0.2.zip</a></font></td>
+    <td width="82%">&nbsp;<font size="4" color="#FFFFFF">5.0.5-&nbsp;
+    <a href="FW-MWV-v5.0.5-HWR8.zip">FW-MWV-v5.0.5-HWR8.zip</a></font></td>
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -1205,14 +1211,13 @@ recomendable verificar la configuración tras aplicar una actualización del
     para utilizarlo en mi observatorio y el precio cubre costes de materiales y 
     algunas horas de montaje. Sólo el desarrollo software ha supuesto cientos de 
     horas de trabajo. Sigo trabajando en su evolución, 
-    siendo ésta la cuarta generación.</font><p>
+    siendo ésta la quimta generación.</font><p>
     &nbsp;<p>
     <font size="4" color="#FFFFFF">El dispositivo montado, verificado y listo para utilizar, incluidos 
     portes a la península, lo vendo por:</font><blockquote>
       <p>
     <b>
-    <font size="4" color="#C6C246">Meteo Watcher V 
-    - con anemómetro incluido:</font></b><font size="4" color="#FFFFFF"> 
+    <font size="4" color="#C6C246">Meteo Watcher V, con anemómetro incluido:</font></b><font size="4" color="#FFFFFF"> 
     310,00€ 
      
     </font></blockquote>
